@@ -1,0 +1,37 @@
+<!-- Atributos de id e class -->
+
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+    <!-- CSS interno-->
+     <!-- CSS contém especificidade!-->
+    <style> 
+        h1 {background: red;}
+
+        p {background: blue;}
+
+        #cabecalho-dois {background: purple;}
+
+        .fundo-marrom {background: brown;}
+
+        .bold {color: pink;}
+    </style>
+</head>
+<body>
+    <h1 id="cabecalho-um" class="fundo-marrom"> 
+        Vai vir aqui
+    </h1> 
+    <!-- Não pode ter um id pra dois ou mais atributos (#) -->
+    <!-- A classe pode se repetir em diversos atributos (.) -->
+    <h1 id="cabecalho-dois" class="fundo-vermelho"> 
+        Vai vir aqui
+    </h1>
+
+    <p>
+        Um texto <b class="bold">qualquer</b>
+    </p>
+</body>
+</html>
