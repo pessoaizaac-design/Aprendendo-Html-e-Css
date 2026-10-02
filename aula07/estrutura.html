@@ -1,0 +1,60 @@
+<!-- Pensando em Html e Css-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0; 
+            padding: 0;
+        }
+
+        body{
+            min-height: 100vh;
+            background-image: url(exemplo.png);
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+
+        }
+
+        #heading {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        #heading div{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        #heading .h1 {
+            font-size: 20px; 
+            text-transform: uppercase;
+            padding: 15px 0;
+        }
+
+        #heading a {
+            color: white; 
+            text-decoration: none; 
+            font-family:sans-serif;
+        }
+    </style>
+</head>
+<body>
+       <header id="heading">
+        <div>
+            <h1 class="h1">
+              <a href="#">Netflix</a>
+            </h1>
+             <h2 class="h1">
+              <a href="#">Netflix</a>
+            </h2>
+        </div>
+       </header>
+</body>
+</html>
