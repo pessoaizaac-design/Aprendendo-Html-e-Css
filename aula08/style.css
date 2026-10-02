@@ -1,0 +1,24 @@
+.sessao-um {
+width: 200px;
+height: 150px;
+padding: 15px;
+margin: 15px;
+
+color: #fff;
+
+background-image: url(img.jpeg);
+background-size: cover;
+background-position: center center;
+
+border: 1px solid black;
+}
+
+.sessao-dois {
+width: 200px;
+height: 50px;
+padding: 15px;
+margin: 15px;
+
+background: cyan;
+border: 1px solid black;
+}
