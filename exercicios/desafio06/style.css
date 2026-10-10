@@ -59,6 +59,7 @@ header {
 
     display: flex;
     margin: auto;
+    border-radius: 5px;
 }
 
 .corpo h1 {
@@ -85,13 +86,15 @@ header {
     font-size: 17px;
 
     color: green;
-    background: linear-gradient(to right, rgba(111, 244, 111, 0.629), rgba(61, 163, 61, 0.029));
+    background: linear-gradient(to right, rgba(111, 244, 111, 0.443), rgba(218, 227, 218, 0));
 }
 
 .conteudo picture img {
     width: 100%;
     max-width: 700px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .conteudo source {
@@ -108,8 +111,8 @@ header {
 
 #video iframe {
     width: 100%;
-    max-width: 500px;
-    height: 280px;
+    max-width: 1000px;
+    height: 320px;
     margin: 0 auto;
     border: none;
     display: block;
