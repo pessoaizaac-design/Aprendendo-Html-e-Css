@@ -1,0 +1,121 @@
+<!-- Formulário -->
+<!--
+types:
+- text = texto
+- checkbox = marcar
+- radio = checkbox em forma de bolinha
+- date = colocar a data
+- datetime = colocar data e hora
+- time = colocar somente a hora
+- color = escolher uma cor
+- email = indicar seu endereço de e-mail
+- file = indicar um arquivo
+- number = escolher número
+
+button:
+- reset = restaurar todos inputs
+- submit = enviar todos inputs
+
+- name: Nome do input que chega a você para o backend
+- label: identificar o input (for: id)
+- id: identificador do input
+- value: valor que chega ao backend
+- required: torna o campo obrigatório
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+       <p>O meu formulário</p>
+       <p>
+        <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+       </p>
+
+       <p>
+        <label for="dev1">Sou um dev1:</label>
+        <input type="checkbox" id="dev1" name="dev1" value="sim"> <br>
+        <label for="dev2">Sou um dev:</label>
+        <input type="checkbox" id="dev2" name="dev2" value="sim"> <br>
+        <label for="dev3">Sou um dev:</label>
+        <input type="checkbox" id="dev3" name="dev3" value="sim">
+       </p>
+
+        <p>
+         Gênero: <br>
+         <label for="feminino">Feminino:</label> 
+         <input type="radio" id="feminino" name="genero" value="feminino"> <br>
+         <label for="masculino">Masculino:</label> 
+         <input type="radio" id="masculino" name="genero" value="masculino" > <br>
+         <label for="outro">Outro:</label> 
+         <input type="radio" id="outro" name="genero" value="outro">
+        </p>
+
+        <p>
+         <label for="data">Data:</label>
+         <input type="data" id="data" name="data">
+        </p>
+
+        <p>
+         <label for="datetime">Data e Hora:</label>
+         <input type="datetime-local" id="datetime" name="datetime">
+        </p>
+
+        <p>
+         <label for="time">Hora:</label>
+         <input type="time" id="time" name="time">
+        </p>
+
+        <p>
+         <label for="color">Cor preferida:</label>
+         <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+         <label for="email">Seu e-mail:</label>
+         <input type="email" id="email" name="email" placeholder="ex: email@email.com" required>
+        </p>
+
+        <p>
+         <label for="senha">Sua senha:</label>
+         <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </p>
+
+        <p>
+         <label for="senha">Range:</label>
+         <input type="range" id="range" name="range" min="0" max="10">
+        </p>
+
+        <p>
+         <label for="file">Sua foto:</label>
+         <input type="file" id="file" name="file" accept=".png, .svf, image/*" multiple>
+        </p>
+
+        <p>
+         <label for="number">Número preferifo:</label>
+         <input type="number" id="number" name="number" placeholder="Digite um número" min="0" max="100000000000000000">
+        </p>
+
+        <p>
+         <button type="reset">Reset</button>
+         <button type="submit">Enviar</button>
+        </p>
+    
+    </form>
+</body>
+</html>
