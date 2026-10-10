@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            color: blue;
+        }
+
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            font-size: 30px;
+        }
+
+        table {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        tr {
+            text-align: center;
+        }
+
+        td {
+            background-color: yellow;
+        }
+
+        caption {
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <table cellspacing="1" cellpadding="3">
+
+       <caption>
+        Tabela 1. Estatística
+       </caption>
+
+       <tr>
+        <th rowspan="2" colspan="2"></th>
+        <td colspan="3" align="center"><b>Quantitativo estudantes por turma</b></td>
+       </tr>
+
+       <tr>
+        <td><b>Alunos</b></td>
+        <td><b>Alunas</b></td>
+        <td><b>Professor</b></td>
+       </tr>
+
+       <tr>
+        <td rowspan="4"><b>Turmas</b></td>
+        <td><b>A</b></td>
+        <td><b>20</b></td>
+        <td><b>5</b></td>
+        <td><b>João Pedro</b></td>
+       </tr>
+
+       <tr>
+        <td><b>B</b></td>
+        <td>21</td>
+        <td>3</td>
+        <td>idem</td>
+       </tr>
+
+       <tr>
+        <td><b>C</b></td>
+        <td>25</td>
+        <td>2</td>
+        <td>Maria José</td>
+       </tr>
+
+       <tr>
+        <td><b>D</b></td>
+        <td>20</td>
+        <td>0</td>
+        <td>idem</td>
+       </tr>
+
+       <tr>
+        <td colspan="2">Total</td>
+        <td>86</td>
+        <td>10</td>
+        <td>2</td>
+       </tr>
+    </table>
+</body>
+</html>
