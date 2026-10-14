@@ -1,0 +1,35 @@
+/*
+==> Div é display block por padrão
+==> Float: O elemento só vai ocupar o espaço dele. Ele não altera o contéudo!
+==> Clear: Limpa o lado que ovocê indicar --> both: limpa automaticamente
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    padding: 15px;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 300px;
+    float: left;  
+    padding: 20px;
+}
+
+.grid .col-content {
+    background: red;
+    width: 100%;
+    height: 100%;
+}
