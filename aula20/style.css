@@ -1,0 +1,41 @@
+/*
+px - A mais utilizada, praricamente a unidade de medida Universal.
+em - Se baseia no elemento pai mais perto dele! mutiplica o valor do pai.
+rem - Igual o em porém se baseia na medida do Html, do geral.
+vw - view port, todo espaço visto na tela (Usado para width).
+*/
+
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pai {
+    width: 50rem;
+    height: 100vh;
+    background: yellow;
+    overflow: hidden;
+}
+
+.pai > div {
+    width: 50%;
+    height: 50rem;
+    background: blue;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+.color-one {
+    background: turquoise;
+}
+
+.color-two {
+    background: violet;
+}
