@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    padding: 15px;
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #8ecae6, #219ebc);
+    /* ABCDEF123456789 --> Hexadecimal */
+    /* RGB( Vermelho(0 a 255), Verde(0 a 255), Azul(0 a 255) ) */
+    /* RGBA --> Funciona iual o rgb, porém o A altera a opacidade */
+}
