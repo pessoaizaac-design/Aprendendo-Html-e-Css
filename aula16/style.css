@@ -1,0 +1,14 @@
+#texto {
+    font-family: sans-serif;
+    color: red;
+    font-size: 40px;
+}
+
+p {
+    font-size: initial
+}
+
+h1 {
+    font-size: inherit;
+    color: initial;
+}
