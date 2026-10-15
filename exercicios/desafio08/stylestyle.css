@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+header {
+    background: black;
+    color: white;
+
+    height: 150px;
+    width: 100%;
+}
+
+header, h1, p {
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    margin-top: 10px;
+    font-family: 'Passion One', sans-serif;
+}
+
+header p {
+    margin-top: -20px;
+    font-size: 11px;
+}
+
+.texto1 p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: 'Sriracha', cursive;
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 15px;
+}
+
+.texto2 p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Sriracha', cursive;
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+    width: 50%;
+
+    margin-top: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.texto2 {
+    background: url(pacote-d012/imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    height: 500px;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding-top: 50px;
+}
