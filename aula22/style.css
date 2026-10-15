@@ -1,0 +1,30 @@
+/*
+top: Em relação ao topo
+left: Em relação a esquerda
+rigth: Em relação a direita
+bottom: Em relação ao inferior
+
+z-index: "Nível" de poder em relação aos outros
+
+position-static: O elemento não se move.
+position-relative: O elemento se move em relação ao outro.
+position-absolute: O elemento se destaca em relção ao outro.
+position-fixed: O elemento nao sai da sua posição mas acompanha a tela.
+position-sticky: 
+*/
+
+
+* {
+    margin: 0;
+}
+
+ul {
+    height: 100px;
+    overflow-y: auto;
+}
+
+ul li.sticky {
+    position: sticky;
+    background: grey;
+    top: 0;
+}
