@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sriracha&display=swap');
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    color: #d3d3d3;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+header {
+    background: linear-gradient(to bottom, #d50e12eb, #ae1719);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    gap: 40px;
+}
+
+header nav a {
+    padding: 6px;
+    color: white;
+    text-decoration: none;
+    
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+header nav a:hover {
+    background: rgba(0, 0, 0, 0.208);
+    border-radius: 100px;
+    padding: 20px;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+main {
+    margin-top: 80px;
+}
+
+main h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: #660708;
+
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+main p {
+    color: black;
+    font-family: sans-serif;
+    line-height: 23px;
+    font-size: 15px;
+}
+
+div {
+    background: #b1a7a688;
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+
+    height: auto;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #b1a7a688;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    padding: 5px 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;  
+        align-items: center;      
+        gap: 15px;               
+    }
+
+    header nav {
+        flex-wrap: wrap;         
+        justify-content: center;
+        gap: 12px;               
+    }
+}
