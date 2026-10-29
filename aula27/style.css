@@ -1,0 +1,68 @@
+/*
+Todo elemento que separa contéudo vem por padrão o display: block
+
+flex-direction: Define a direção do eixo principal
+row or column (main axix/ cross axis);
+row-reverse or column-reverse;
+
+justify-content: Trabalha no eixo principal
+flex-start - No começo do main axis; 
+flex-end - No fim do main axis; 
+center - No centro do main axis; 
+space-around - Distribui de forma proporcional no main axis;
+space-between -  Espaço distríbuido de forma proporcional considerando as laterais
+space-evenly - Espaço igual para todos elementos
+
+align-items: Trabalha no eixo perpendicular
+flex-start - No começo do cross axis;
+flex-end - No fim do cross axis;
+center - No centro do main axis;
+baseline;
+stretch;
+
+flex-wrap: wrap (se não tiver espaço em uma linha ele utiliza outra).
+flex-grow: Usa o espaço que ta sobrando e faz a divisão pros elementos existentes.
+flex-flow: direction and wrap.
+*/
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+}
+
+p {
+    margin: 24px;
+}
+
+.two-colums {
+    display: flex;
+}
+
+.two-colums .col {
+    display: flex;
+    flex-direction: column;
+
+    background: lawngreen;
+    margin: 15px;
+    padding: 30px;
+}
+
+.gallery {
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.gallery .img {
+    flex: 1 0 20%;
+    height: 50px;
+    background: blue;
+    margin: 10px;
+}
+
+
+
